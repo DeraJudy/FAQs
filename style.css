@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+	--White:hsl(0, 0%, 100%);
+    --Lightpink: hsl(275, 100%, 97%);
+    --Grayishpurple: hsl(292, 16%, 49%);
+    --Darkpurple: hsl(292, 42%, 14%);
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Lightpink);
+}
+
+.container .image{
+    background-image: url('assets/images/background-pattern-desktop.svg');
+    width: 100%;
+    height: 100%;
+    min-height: 14em;
+}
+
+.container .faq-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .faq-container .faq{
+    padding: 35px 40px 10px;
+    max-width: 100%;
+    background: var(--White);
+    border-radius: 20px;
+    margin-top: -140px;
+}
+
+.container .faq-container .faq .title{
+    display: flex;
+    height: 60px;
+}
+
+.container .faq-container .faq .title img{
+    width: 2em;
+    height: 2em;
+    margin-top: 15px;
+}
+
+.container .faq-container .faq .title .title-text{
+    font-size: 3em;
+    font-weight: 800;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 2px;
+    margin-left: 19px;
+    margin-top: 4px;
+}
+
+.container .faq-container .faq .content{
+    max-width: 410px;
+    margin-top: 1.5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--Grayishpurple);
+    cursor: pointer;
+}
+
+.container .faq-container .faq .content .show{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .faq-container .faq .content.active .answer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-height: 300px;
+}
+
+.container .faq-container .faq .content .show h4{
+    margin-top: 5px;
+    max-width: 90%;
+    font-size: .85em;
+    font-weight: 700;
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.5;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer p{
+    font-size: .67em;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    line-height: 1.3;
+    font-family: "Work Sans", sans-serif;
+    color: rgb(175, 168, 168);
+}
+
+/* for the las FAQs div */
+.container .faq-container .faq .content-end{
+    max-width: 410px;
+    margin-top: 2rem;
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+
+.container .faq-container .faq .content-end .show{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .faq-container .faq .content-end .show h4{
+    margin-top: 5px;
+    max-width: 90%;
+    font-size: .85em;
+    font-weight: 700;
+    font-family: "Work Sans", sans-serif;
+    line-height: 1.5;
+}
+
+
+.container .faq-container .faq .content .show h4:hover{
+    color: var(--Grayishpurple);
+}
+
+.container .faq-container .faq .content-end .show h4:hover{
+    color: var(--Grayishpurple);
+}
+
+@media (max-width: 375px) {
+
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        background-color: var(--Lightpink);
+    }
+
+    .container .image{
+        background-image: url('assets/images/background-pattern-mobile.svg');
+        width: 100%;
+        height: 100%;
+        min-height: 15em;
+    }
+
+    .container .faq-container{
+        display: flex;
+	    justify-content: center;
+	    align-items: center;
+    }
+
+    .container .faq-container .faq{
+        padding: 25px 20px 10px 20px;
+        max-width: 78%;
+	    background: var(--White);
+	    border-radius: 20px;
+        margin-top: -140px;
+    }
+
+    .container .faq-container .faq .title{
+        display: flex;
+        height: 60px;
+    }
+
+    .container .faq-container .faq .title img{
+        width: 2em;
+        height: 2em;
+        margin-top: 15px;
+    }
+
+    .container .faq-container .faq .title .title-text{
+        font-size: 3em;
+        font-weight: 800;
+        font-family: "Work Sans", sans-serif;
+        letter-spacing: 2px;
+        margin-left: 19px;
+        margin-top: 4px;
+    }
+
+    .container .faq-container .faq .content{
+        max-width: 270px;
+        margin-top: 2rem;
+        padding-bottom: .5rem;
+        border-bottom: 1px solid var(--Grayishpurple);
+        cursor: pointer;
+    }
+
+    .container .faq-container .faq .content .show{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container .faq-container .faq .content .show h4{
+        margin-top: 5px;
+        max-width: 72%;
+        font-size: .9em;
+        font-weight: 700;
+        font-family: "Work Sans", sans-serif;
+        line-height: 1.5;
+    }
+
+    .answer p{
+        font-size: .8em;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        line-height: 1.3;
+        font-family: "Work Sans", sans-serif;
+        color: rgb(175, 168, 168);
+    }
+
+    /* for the las FAQs div */
+    .container .faq-container .faq .content-end{
+        max-width: 270px;
+        margin-top: 2rem;
+        padding-bottom: .5rem;
+        cursor: pointer;
+    }
+
+    .container .faq-container .faq .content-end .show{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container .faq-container .faq .content-end .show h4{
+        margin-top: 5px;
+        max-width: 72%;
+        font-size: .9em;
+        font-weight: 700;
+        font-family: "Work Sans", sans-serif;
+        line-height: 1.5;
+    }
+
+
+}
