@@ -1,3 +1,19 @@
+// function toggleVisibility() {
+//     var showImg = document.getElementById("buttonshow");
+//     var hideImg = document.getElementById("buttonhide");
+//     var dropdown = document.getElementById("answer");
+    
+//     if (showImg.style.display === "none") {
+//       showImg.style.display = "inline";
+//       hideImg.style.display = "none";
+//       dropdown.style.display = "none";
+//     } else {
+//       showImg.style.display = "none";
+//       hideImg.style.display = "inline";
+//       dropdown.style.display = "inline";
+//     }
+//   }
+
 // const content = document.querySelectorAll('content');
 
 // content.forEach((content) => {
